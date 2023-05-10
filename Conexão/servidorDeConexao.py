@@ -1,11 +1,11 @@
 import socket
 
-ipDoCliente1 = '10.15.136.12' 
-ipDoCliente2 = '10.15.136.12' 
-ipDoCliente3 = '10.15.136.12' 
-ipDoCliente4 = '10.15.136.12' 
-ipDoCliente5 = '10.15.136.12' 
-ipDoCliente6 = '10.15.136.12' 
+ipDoCliente1 = '10.15.2.166' 
+ipDoCliente2 = '10.15.2.96' 
+ipDoCliente3 = '10.15.2.98' 
+ipDoCliente4 = '10.15.2.96' 
+ipDoCliente5 = '10.15.2.96' 
+ipDoCliente6 = '10.15.2.96' 
 
 PORT = 12365  
 
@@ -17,3 +17,5 @@ while True:
     print()
     message = msg.encode()
     client_socket.sendto(message, (ipDoCliente1, PORT))
+    client_socket.sendto(message, (ipDoCliente2, PORT))
+    client_socket.sendto(message, (ipDoCliente3, PORT))
